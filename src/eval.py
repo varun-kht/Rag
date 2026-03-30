@@ -67,7 +67,8 @@ def run_evaluation():
                     "citations": final_state.get("citations", []),
                     "draft_response": final_state.get("draft_response"),
                     "missing_info": final_state.get("missing_critical_info", False),
-                    "questions": final_state.get("clarifying_questions", [])
+                    "questions": final_state.get("clarifying_questions", []),
+                    "next_steps": final_state.get("next_steps")
                 }
             })
         except Exception as e:

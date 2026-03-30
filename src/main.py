@@ -36,6 +36,7 @@ def main():
     print(f"Decision: {final_state.get('decision')}")
     print(f"Rationale: {final_state.get('rationale')}")
     print(f"Citations: {final_state.get('citations')}")
+    print(f"Next Steps: {final_state.get('next_steps')}")
     
     if final_state.get('missing_critical_info'):
         print(f"Questions Asked: {final_state.get('clarifying_questions')}")
