@@ -1,0 +1,11 @@
+venv/
+env/
+.venv/
+.env
+chroma_db/
+*.sqlite3
+__pycache__/
+*.pyc
+.vscode/
+out.log
+eval_results.json
