@@ -1,6 +1,6 @@
 # E-commerce Support Resolution Agent
 
-A multi-agent RAG system built with LangGraph that processes customer support tickets and generates policy-grounded resolutions. Built as part of an assessment on hallucination-controlled, citation-backed AI pipelines.
+A multi-agent RAG system built with LangChain that processes customer support tickets and generates policy-grounded resolutions. Built as part of an assessment on hallucination-controlled, citation-backed AI pipelines.
 
 ---
 
@@ -19,7 +19,7 @@ Tickets it's designed to handle:
 
 ## Architecture
 
-Four agents wired together via LangGraph:
+Four agents wired together via LangChain:
 
 | Agent | Responsibility |
 |---|---|
@@ -34,7 +34,7 @@ State flows through a `TicketState` object. The compliance agent is the last gat
 
 ## Stack
 
-- **Orchestration:** LangGraph  
+- **Orchestration:** LangChain  
 - **LLM:** Groq (`llama-3.3-70b-versatile`) via `langchain-groq`  
 - **Embeddings:** `sentence-transformers/all-MiniLM-L6-v2` (local, no API cost)  
 - **Vector Store:** ChromaDB  
@@ -153,7 +153,7 @@ Every resolution includes:
 ├── src/
 │   ├── agents/         # Triage, retriever, writer, compliance
 │   ├── policies/       # Synthetic policy documents
-│   ├── graph.py        # LangGraph state machine and routing
+│   ├── graph.py        # LangChain state machine and routing
 │   ├── models.py       # Pydantic output schemas
 │   ├── ingest.py       # Document ingestion + embedding pipeline
 │   ├── eval.py         # 20-case evaluation suite

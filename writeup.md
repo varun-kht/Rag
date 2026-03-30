@@ -2,7 +2,7 @@
 
 ## Architecture Overview
 
-The system is orchestrated using **LangGraph**, forming a directed graph between 4 agents:
+The system is orchestrated using **LangChain**, forming a directed graph between 4 agents:
 
 1. **Triage Agent** — Takes the incoming ticket and order context JSON. Classifies the issue type (refund / shipping / payment / promo / fraud / other) and statically checks for missing critical fields. If required info is absent, it generates up to 3 clarifying questions and exits the graph immediately — no vector DB query, no hallucinated assumptions.
 

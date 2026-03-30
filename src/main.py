@@ -9,7 +9,7 @@ def main():
         print("ERROR: GROQ_API_KEY not found in .env. Please provide one to run the interactive CLI.")
         return
 
-    print("Building LangGraph...")
+    print("Building LangChain...")
     app = build_graph()
     
     # Example interactive state
