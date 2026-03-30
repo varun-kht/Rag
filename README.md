@@ -164,7 +164,9 @@ Every resolution includes:
 ```
 
 ---
-
+## System flow 
+![alt text](image.png)
+---
 ## Known Limitations
 
 - Compliance agent occasionally over-escalates on ambiguous perishable cases where policy clauses overlap
